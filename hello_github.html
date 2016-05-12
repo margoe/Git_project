@@ -6,20 +6,126 @@
 
 <script>
 
+<!--
+
 function hello(){
 
- window.alert('Hello Github world');
+ window.alert("Hello Github world");
 
 }
 
+
+ /*function isTwoPassed(n1,n2, n3, n4){
+  if((n1==2) || (n2==2) || (n3==2) || (n4==2)){
+
+    return 1; 
+  }
+
+  else{
+    return 0;
+ 
+  }
+
+}*/
+
+
+
+
+/*var isTwoPassed =new Function(n1,n2, n3, n4,  if((n1==2) || (n2==2) ||
+
+ (n3==2) || (n4==2)) return 1; else return 0;);*/
+
+
+
+
+/*function validate(formInputNode){
+
+  //var myForm = document.getElementsByClassName("validateMe");
+  
+  var myForm = document.forms[formInputNode].validateMe.value;
+  
+  if(myForm.value == "" || myForm.value ==null){
+
+     //alert("please fill in all the fields of the form");
+     
+     return false;
+     
+   
+   }
+   else{
+        
+     
+
+     //document.forms[formInputNode].validateMe.value;
+
+     
+        return true; 
+  }
+  
+ }*/
+
+
+Array.prototype.duplicate = function() {
+  
+  var len =5
+  
+  for (var i = 0; i < len; i++) {
+    this[len + i] = this[i];
+  }
+  
+  return this;
+}
+  
+Array.prototype.duplicate = function () {
+    var array = this;
+    return array.concat(array);
+};
+
+
+
+
+
+ 
+
+//-->
 
 </script>
 
 <body>
 
-   <h2> I am testing the following feature for github</h2>
+<script>
+   //isTwoPassed(1,3,4,2);
+   validate(formInputNode);
+
+   
+
+</script>
+   <!-- <h3> Validation Form Example</h3>
+
+
+  <form name="formInputNode" method="post" action="#" onSubmit=" return validate('this');">  
+    <table> 
+     <tr>
+       <td><label for=”email”>Email:</label></td>
+       <td><input type="email" name="email" class=”validateMe" required></td>  
+    </tr>
+ 
+     <tr>
+      <td><label for=”url”>site Url: </label></td>
+      <td><input type="url" name="url"  required></td>   
+             
+    </tr>
+    <tr>    
+     <td><input type="submit" value="Submit""></td>
+    </tr>
+
+  </form> -->
+
+
 
 
 
 
 </body>
+
+</html>
